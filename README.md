@@ -34,7 +34,6 @@ This is a classic example of how **data science bridges customer behavior, produ
 
 The full dataset used in this project is stored at:
 
-```text
 data/bookReviewsData.csv
 
 The class distribution is roughly balanced:
