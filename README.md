@@ -207,16 +207,19 @@ cd book-review-sentiment-classifier
 python -m venv .venv
 source .venv/bin/activate   # macOS/Linux
 # .venv\Scripts\activate    # Windows
+```
 
 3. **Install dependencies (if requirements.txt is present)**
 
 ```bash
 pip install -r requirements.txt
+```
 
 4. **Open the notebook**
 
 ```bash
 jupyter notebook notebook/book_review_sentiment_classifier.ipynb
+```
 
 Run the cells in order to reproduce the analysis, modeling, and evaluation.
 
