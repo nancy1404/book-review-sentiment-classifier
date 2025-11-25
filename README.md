@@ -73,6 +73,7 @@ tfidf = TfidfVectorizer(
 )
 X = tfidf.fit_transform(df["Review"]).toarray()
 y = df["Positive Review"].astype(int)
+```
 
 ---
 
