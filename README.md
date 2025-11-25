@@ -73,7 +73,9 @@ tfidf = TfidfVectorizer(
     stop_words="english"
 )
 X = tfidf.fit_transform(df["Review"]).toarray()
-y = df["Positive Review"].astype(int)
+y = df["Positive Review"].astype(int)```
+
+---
 
 ### 3. Train / Test Split
 
