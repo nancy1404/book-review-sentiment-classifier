@@ -89,6 +89,7 @@ X_train, X_test, y_train, y_test = train_test_split(
     random_state=42,
     stratify=y
 )
+```
 
 I experimented with the length-based features, but since they were so strongly correlated and the model already gets rich signal from TF-IDF, I kept the final modeling focused on **text features**.
 
@@ -119,6 +120,7 @@ nn_model.compile(
     loss="binary_crossentropy",
     metrics=["accuracy"]
 )
+```
 
 To reduce overfitting, I used:
 
@@ -148,6 +150,7 @@ lr_model.fit(X_train, y_train)
 y_pred_lr = lr_model.predict(X_test)
 lr_accuracy = accuracy_score(y_test, y_pred_lr)
 print(f"Logistic Regression Test Accuracy: {lr_accuracy:.4f}")
+```
 
 **Result**
 
@@ -189,7 +192,6 @@ book-review-sentiment-classifier/
 ├── notebook/
 │   └── book_review_sentiment_classifier.ipynb  # Full EDA & modeling
 ├── README.md                              # Project overview (this file)
-└── requirements.txt                       # (optional) Python dependencies
 
 ## ▶️ How to Run
 
